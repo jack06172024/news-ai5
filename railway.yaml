@@ -1,8 +1,7 @@
-services:
-  scraper-service:
-    rootDir: ./scraper-service
-    buildCommand: docker build -t scraper-service .
-    startCommand: docker run -p 8003:8003 scraper-service
+  summary-service:
+    rootDir: ./summary-service
+    buildCommand: docker build -t summary-service .
+    startCommand: docker run -p 8004:8004 summary-service
     env:
-      - PORT=8003
-
+      - PORT=8004
+  
